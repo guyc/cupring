@@ -1,12 +1,12 @@
 
 include </Users/guy/replicator/cupring/artwork.scad>
 
-topInnerRadius    = 78.5/2;
-bottomInnerRadius = 77.0/2;
+topInnerRadius    = 1+78.5/2;
+bottomInnerRadius = 1+77.0/2;
 ringHeight        = 10.0;
-ringThickness     =  1.0;
+ringThickness     =  1.5;
 recessDepth       =  0.5;
-textRepeat        = 10;
+textRepeat        = 2;
 
 $fn = 100;
 
@@ -45,7 +45,8 @@ module textRecess()
 }
 
 
-difference() {
-  ring();
-  textRecess();
-}
+//difference() {
+//  ring();
+//  textRecess();
+//}
+ring();
